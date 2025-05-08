@@ -1,0 +1,13 @@
+import pandas as pd
+
+data = {
+    'project_name': ['CellMap'],
+    'team_name': ['Team CellIntelli'],
+    'category': ['Biotechnology'],
+    'description': ["CellMap is an AI-powered platform decoding cellular behavior with advanced imaging and real-time analysis to accelerate discoveries in life sciences."],
+    'submission_url': ['https://cellmap.vercel.app/'],
+    'contact_email': ['cellmapteam@email.com']
+}
+
+df = pd.DataFrame(data)
+df.to_parquet('cellmap_submission.parquet', index=False)
